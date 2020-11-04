@@ -1,0 +1,175 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Platform &#8212; Embench-LiteX tester  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="platform">
+<h1>Platform<a class="headerlink" href="#platform" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Core</th>
+<th class="head">SHA1</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>vexriscv</td>
+<td>654057b2f5cec0f9fc99487dff67861f76fcbe7e</td>
+</tr>
+<tr class="row-odd"><td>picorv32</td>
+<td>88974894c800ee2e827db47865e0611a07ff40d7</td>
+</tr>
+<tr class="row-even"><td>minerva</td>
+<td>4731142284cf87e89b21fb35ceff1139f2f89227</td>
+</tr>
+<tr class="row-odd"><td>cv32e40p</td>
+<td>8a8202f13615d54d520bddb3a347ec2e166b1e02</td>
+</tr>
+<tr class="row-even"><td>serv</td>
+<td>4bc836c825f79ddebb0685a0986ec292a46781b7</td>
+</tr>
+<tr class="row-odd"><td>lm32</td>
+<td>48333804e40c7c9c1c8d5b2e70ba75f4b646d8f0</td>
+</tr>
+<tr class="row-even"><td>mor1kx</td>
+<td>af561171f5fc8c684537897f12ef0f429e38624b</td>
+</tr>
+<tr class="row-odd"><td>microwatt</td>
+<td>ba76652320e9dc23d9b2c64a62d0a752c870a215</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="used-tools">
+<h2>Used tools:<a class="headerlink" href="#used-tools" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="toolchains">
+<h2>Toolchains:<a class="headerlink" href="#toolchains" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">RISC-V:</th><td class="field-body">riscv64-unknown-elf-gcc (9.1.0) 9.1.0</td>
+</tr>
+<tr class="field-even field"><th class="field-name">LM32:</th><td class="field-body">lm32-elf-gcc (8.2.0) 8.2.0</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">OpenRISC:</th><td class="field-body">or1k-elf-gcc (9.1.0) 9.1.0</td>
+</tr>
+<tr class="field-even field"><th class="field-name">OpenPOWER:</th><td class="field-body">ppc64le-linux-musl-gcc (9.1.0) 9.1.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="other-tools">
+<h2>Other tools:<a class="headerlink" href="#other-tools" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">verilator:</th><td class="field-body">Verilator 4.100 2020-09-07 rev UNKNOWN_REV</td>
+</tr>
+<tr class="field-even field"><th class="field-name">yosys:</th><td class="field-body">Yosys 0.9+3619 (git sha1 c403c98, gcc 7.5.0-3ubuntu1~18.04 -fPIC -Os)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">ghdl:</th><td class="field-body">GHDL 1.0-dev () [Dunoon edition]  Compiled with GNAT Version: 8.4.0  mcode code generator Written by Tristan Gingold.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Platform</a><ul>
+<li><a class="reference internal" href="#used-tools">Used tools:</a></li>
+<li><a class="reference internal" href="#toolchains">Toolchains:</a></li>
+<li><a class="reference internal" href="#other-tools">Other tools:</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/platform.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Antmicro.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.7</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/platform.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

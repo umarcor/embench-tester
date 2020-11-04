@@ -1,0 +1,643 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>&lt;no title&gt; &#8212; Embench-LiteX tester  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <table border="1" class="docutils" id="id1">
+<caption><span class="caption-text">Relative tests results: [%]</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head stub">&#160;</th>
+<th class="head">vexriscv</th>
+<th class="head">picorv32</th>
+<th class="head">minerva</th>
+<th class="head">cv32e40p</th>
+<th class="head">serv</th>
+<th class="head">lm32</th>
+<th class="head">mor1kx</th>
+<th class="head">microwatt</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><th class="stub">aha-mont64</th>
+<td>73.0</td>
+<td>14.0</td>
+<td>7.0</td>
+<td>31.0</td>
+<td>0.0</td>
+<td>47.0</td>
+<td>51.0</td>
+<td>119.0</td>
+</tr>
+<tr class="row-odd"><th class="stub">crc32</th>
+<td>74.0</td>
+<td>15.0</td>
+<td>8.0</td>
+<td>28.0</td>
+<td>1.0</td>
+<td>68.0</td>
+<td>72.0</td>
+<td>36.0</td>
+</tr>
+<tr class="row-even"><th class="stub">cubic</th>
+<td>27.0</td>
+<td>8.0</td>
+<td>6.0</td>
+<td>17.0</td>
+<td>0.0</td>
+<td>20.0</td>
+<td>27.0</td>
+<td>53.0</td>
+</tr>
+<tr class="row-odd"><th class="stub">edn</th>
+<td>86.0</td>
+<td>10.0</td>
+<td>22.0</td>
+<td>29.0</td>
+<td>0.0</td>
+<td>75.0</td>
+<td>62.0</td>
+<td>21.0</td>
+</tr>
+<tr class="row-even"><th class="stub">huffbench</th>
+<td>103.0</td>
+<td>28.0</td>
+<td>14.0</td>
+<td>33.0</td>
+<td>3.0</td>
+<td>98.0</td>
+<td>90.0</td>
+<td>45.0</td>
+</tr>
+<tr class="row-odd"><th class="stub">matmult-int</th>
+<td>81.0</td>
+<td>13.0</td>
+<td>26.0</td>
+<td>29.0</td>
+<td>0.0</td>
+<td>59.0</td>
+<td>62.0</td>
+<td>17.0</td>
+</tr>
+<tr class="row-even"><th class="stub">minver</th>
+<td>46.0</td>
+<td>13.0</td>
+<td>8.0</td>
+<td>26.0</td>
+<td>0.0</td>
+<td>32.0</td>
+<td>35.0</td>
+<td>38.0</td>
+</tr>
+<tr class="row-odd"><th class="stub">nbody</th>
+<td>54.0</td>
+<td>14.0</td>
+<td>9.0</td>
+<td>30.0</td>
+<td>0.0</td>
+<td>26.0</td>
+<td>34.0</td>
+<td>66.0</td>
+</tr>
+<tr class="row-even"><th class="stub">nettle-aes</th>
+<td>58.0</td>
+<td>17.0</td>
+<td>6.0</td>
+<td>28.0</td>
+<td>1.0</td>
+<td>58.0</td>
+<td>67.0</td>
+<td>42.0</td>
+</tr>
+<tr class="row-odd"><th class="stub">nettle-sha256</th>
+<td>51.0</td>
+<td>15.0</td>
+<td>5.0</td>
+<td>25.0</td>
+<td>2.0</td>
+<td>41.0</td>
+<td>34.0</td>
+<td>55.0</td>
+</tr>
+<tr class="row-even"><th class="stub">nsichneu</th>
+<td>31.0</td>
+<td>30.0</td>
+<td>18.0</td>
+<td>33.0</td>
+<td>3.0</td>
+<td>36.0</td>
+<td>36.0</td>
+<td>19.0</td>
+</tr>
+<tr class="row-odd"><th class="stub">picojpeg</th>
+<td>69.0</td>
+<td>16.0</td>
+<td>10.0</td>
+<td>27.0</td>
+<td>2.0</td>
+<td>65.0</td>
+<td>73.0</td>
+<td>33.0</td>
+</tr>
+<tr class="row-even"><th class="stub">qrduino</th>
+<td>107.0</td>
+<td>24.0</td>
+<td>9.0</td>
+<td>39.0</td>
+<td>1.0</td>
+<td>103.0</td>
+<td>94.0</td>
+<td>56.0</td>
+</tr>
+<tr class="row-odd"><th class="stub">sglib-combined</th>
+<td>89.0</td>
+<td>28.0</td>
+<td>18.0</td>
+<td>35.0</td>
+<td>2.0</td>
+<td>75.0</td>
+<td>77.0</td>
+<td>42.0</td>
+</tr>
+<tr class="row-even"><th class="stub">slre</th>
+<td>99.0</td>
+<td>28.0</td>
+<td>19.0</td>
+<td>38.0</td>
+<td>3.0</td>
+<td>86.0</td>
+<td>94.0</td>
+<td>49.0</td>
+</tr>
+<tr class="row-odd"><th class="stub">st</th>
+<td>57.0</td>
+<td>13.0</td>
+<td>8.0</td>
+<td>27.0</td>
+<td>0.0</td>
+<td>21.0</td>
+<td>29.0</td>
+<td>85.0</td>
+</tr>
+<tr class="row-even"><th class="stub">statemate</th>
+<td>82.0</td>
+<td>32.0</td>
+<td>20.0</td>
+<td>35.0</td>
+<td>3.0</td>
+<td>76.0</td>
+<td>56.0</td>
+<td>39.0</td>
+</tr>
+<tr class="row-odd"><th class="stub">ud</th>
+<td>54.0</td>
+<td>14.0</td>
+<td>13.0</td>
+<td>26.0</td>
+<td>1.0</td>
+<td>34.0</td>
+<td>50.0</td>
+<td>26.0</td>
+</tr>
+<tr class="row-even"><th class="stub">wikisort</th>
+<td>101.0</td>
+<td>25.0</td>
+<td>20.0</td>
+<td>42.0</td>
+<td>0.0</td>
+<td>48.0</td>
+<td>62.0</td>
+<td>56.0</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul class="simple">
+<li>This results present CPU performance compared to ARM Cortex M4</li>
+<li>Higher values are better</li>
+</ul>
+<table border="1" class="docutils" id="id2">
+<caption><span class="caption-text">Benchmark statistics:</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head stub">&#160;</th>
+<th class="head">vexriscv</th>
+<th class="head">picorv32</th>
+<th class="head">minerva</th>
+<th class="head">cv32e40p</th>
+<th class="head">serv</th>
+<th class="head">lm32</th>
+<th class="head">mor1kx</th>
+<th class="head">microwatt</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><th class="stub">speed geometric mean</th>
+<td>66.0</td>
+<td>17.0</td>
+<td>11.0</td>
+<td>30.0</td>
+<td>1.0</td>
+<td>50.0</td>
+<td>54.0</td>
+<td>42.0</td>
+</tr>
+<tr class="row-odd"><th class="stub">speed geometric standard deviation</th>
+<td>1.46</td>
+<td>1.48</td>
+<td>1.65</td>
+<td>1.21</td>
+<td>3.58</td>
+<td>1.63</td>
+<td>1.48</td>
+<td>1.61</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul class="simple">
+<li>Benchmark consists of multiple invidual tests</li>
+<li>Higher geometric mean is better</li>
+<li>Lower standard deviation is better, more consistent results</li>
+</ul>
+<table border="1" class="docutils" id="id3">
+<caption><span class="caption-text">Absolute tests results: [ms]</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head stub">&#160;</th>
+<th class="head">vexriscv</th>
+<th class="head">picorv32</th>
+<th class="head">minerva</th>
+<th class="head">cv32e40p</th>
+<th class="head">serv</th>
+<th class="head">lm32</th>
+<th class="head">mor1kx</th>
+<th class="head">microwatt</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><th class="stub">aha-mont64</th>
+<td>5468</td>
+<td>29142</td>
+<td>60117</td>
+<td>12746</td>
+<td>1201669</td>
+<td>8438</td>
+<td>7823</td>
+<td>3369</td>
+</tr>
+<tr class="row-odd"><th class="stub">crc32</th>
+<td>5403</td>
+<td>26656</td>
+<td>49102</td>
+<td>14464</td>
+<td>367018</td>
+<td>5928</td>
+<td>5575</td>
+<td>11027</td>
+</tr>
+<tr class="row-even"><th class="stub">cubic</th>
+<td>14673</td>
+<td>47643</td>
+<td>61400</td>
+<td>22527</td>
+<td>3302039</td>
+<td>19999</td>
+<td>14613</td>
+<td>7353</td>
+</tr>
+<tr class="row-odd"><th class="stub">edn</th>
+<td>4671</td>
+<td>39668</td>
+<td>18544</td>
+<td>13601</td>
+<td>4294967</td>
+<td>5348</td>
+<td>6436</td>
+<td>18789</td>
+</tr>
+<tr class="row-even"><th class="stub">huffbench</th>
+<td>4008</td>
+<td>14785</td>
+<td>29594</td>
+<td>12406</td>
+<td>162626</td>
+<td>4190</td>
+<td>4602</td>
+<td>9115</td>
+</tr>
+<tr class="row-odd"><th class="stub">matmult-int</th>
+<td>4938</td>
+<td>30685</td>
+<td>15123</td>
+<td>13647</td>
+<td>2151027</td>
+<td>6716</td>
+<td>6450</td>
+<td>22964</td>
+</tr>
+<tr class="row-even"><th class="stub">minver</th>
+<td>8742</td>
+<td>30971</td>
+<td>47172</td>
+<td>15284</td>
+<td>4294967</td>
+<td>12529</td>
+<td>11331</td>
+<td>10567</td>
+</tr>
+<tr class="row-odd"><th class="stub">nbody</th>
+<td>5232</td>
+<td>19982</td>
+<td>32245</td>
+<td>9488</td>
+<td>2448259</td>
+<td>10833</td>
+<td>8217</td>
+<td>4273</td>
+</tr>
+<tr class="row-even"><th class="stub">nettle-aes</th>
+<td>6885</td>
+<td>23857</td>
+<td>66303</td>
+<td>14501</td>
+<td>338046</td>
+<td>6965</td>
+<td>5975</td>
+<td>9567</td>
+</tr>
+<tr class="row-odd"><th class="stub">nettle-sha256</th>
+<td>7848</td>
+<td>27021</td>
+<td>82610</td>
+<td>15810</td>
+<td>252651</td>
+<td>9851</td>
+<td>11822</td>
+<td>7212</td>
+</tr>
+<tr class="row-even"><th class="stub">nsichneu</th>
+<td>13018</td>
+<td>13194</td>
+<td>21905</td>
+<td>12107</td>
+<td>157985</td>
+<td>11022</td>
+<td>11125</td>
+<td>21131</td>
+</tr>
+<tr class="row-odd"><th class="stub">picojpeg</th>
+<td>5858</td>
+<td>25445</td>
+<td>41957</td>
+<td>15033</td>
+<td>267163</td>
+<td>6235</td>
+<td>5516</td>
+<td>12211</td>
+</tr>
+<tr class="row-even"><th class="stub">qrduino</th>
+<td>3986</td>
+<td>17601</td>
+<td>47899</td>
+<td>10906</td>
+<td>303785</td>
+<td>4117</td>
+<td>4535</td>
+<td>7547</td>
+</tr>
+<tr class="row-odd"><th class="stub">sglib-combined</th>
+<td>4486</td>
+<td>14238</td>
+<td>21994</td>
+<td>11367</td>
+<td>247771</td>
+<td>5281</td>
+<td>5172</td>
+<td>9414</td>
+</tr>
+<tr class="row-even"><th class="stub">slre</th>
+<td>4044</td>
+<td>14147</td>
+<td>20873</td>
+<td>10689</td>
+<td>152571</td>
+<td>4689</td>
+<td>4269</td>
+<td>8210</td>
+</tr>
+<tr class="row-odd"><th class="stub">st</th>
+<td>7176</td>
+<td>31470</td>
+<td>49641</td>
+<td>15002</td>
+<td>3535898</td>
+<td>19865</td>
+<td>14092</td>
+<td>4783</td>
+</tr>
+<tr class="row-even"><th class="stub">statemate</th>
+<td>4859</td>
+<td>12340</td>
+<td>20259</td>
+<td>11289</td>
+<td>127387</td>
+<td>5297</td>
+<td>7202</td>
+<td>10306</td>
+</tr>
+<tr class="row-odd"><th class="stub">ud</th>
+<td>7460</td>
+<td>27969</td>
+<td>30747</td>
+<td>15494</td>
+<td>572278</td>
+<td>11597</td>
+<td>7922</td>
+<td>15551</td>
+</tr>
+<tr class="row-even"><th class="stub">wikisort</th>
+<td>2755</td>
+<td>11015</td>
+<td>13911</td>
+<td>6547</td>
+<td>1095370</td>
+<td>5772</td>
+<td>4455</td>
+<td>4926</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul class="simple">
+<li>Lower value is better</li>
+</ul>
+<table border="1" class="docutils" id="id4">
+<caption><span class="caption-text">Benchmark statistics:</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head stub">&#160;</th>
+<th class="head">vexriscv</th>
+<th class="head">picorv32</th>
+<th class="head">minerva</th>
+<th class="head">cv32e40p</th>
+<th class="head">serv</th>
+<th class="head">lm32</th>
+<th class="head">mor1kx</th>
+<th class="head">microwatt</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><th class="stub">speed geometric mean</th>
+<td>5862</td>
+<td>22193</td>
+<td>33750</td>
+<td>12929</td>
+<td>648763</td>
+<td>7697</td>
+<td>7162</td>
+<td>9164</td>
+</tr>
+<tr class="row-odd"><th class="stub">speed geometric standard deviation</th>
+<td>1.49</td>
+<td>1.51</td>
+<td>1.69</td>
+<td>1.28</td>
+<td>3.45</td>
+<td>1.6</td>
+<td>1.47</td>
+<td>1.67</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul class="simple">
+<li>Benchmark consists of multiple invidual tests</li>
+<li>Lower geometric mean is better</li>
+<li>Lower standard deviation is better, more consistent results</li>
+</ul>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/tables.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Antmicro.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.7</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/tables.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
